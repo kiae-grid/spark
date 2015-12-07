@@ -28,6 +28,20 @@ To build Spark and its example programs, run:
 More detailed documentation is available from the project site, at
 ["Building Spark"](http://spark.apache.org/docs/latest/building-spark.html).
 
+## Building with Cassandra connector
+
+Experimental mode, local to KIAE distribution.
+
+To build the binary distribution run
+
+     ./make-distribution.sh --name kiae-cassandra-spark --tgz -Pcassandra-connector-1.4
+
+After successful build you'll get file spark-$VERSION-bin-kiae-cassandra-spark.tgz
+that can be deployed in the usual way.
+
+One can also use -Pcassandra-connector-1.3 to get Cassandra connector
+from branch 1.3.
+
 ## Interactive Scala Shell
 
 The easiest way to start using Spark is through the Scala shell:
